@@ -5,19 +5,19 @@ import { useState } from "react";
 const items = [
   {
     q: "Quel est le meilleur logiciel de gestion scolaire ?",
-    a: "MyScol fait partie des meilleurs logiciels de gestion scolaire grâce à sa solution tout-en-un. Il centralise la gestion des inscriptions, des notes, de la vie scolaire, de la communication et des finances, avec une interface intuitive adaptée à tous les types d’établissements.",
+    a: "EduSmart fait partie des meilleurs logiciels de gestion scolaire grâce à sa solution tout-en-un. Il centralise la gestion des inscriptions, des notes, de la vie scolaire, de la communication et des finances, avec une interface intuitive adaptée à tous les types d’établissements.",
   },
   {
     q: "Existe-t-il un logiciel pour remplacer Pronote ou Ecole directe ?",
-    a: "Oui, MyScol est une alternative moderne à Pronote ou Ecole directe. Il regroupe en une seule interface la vie scolaire, la gestion administrative, les emplois du temps et la communication.",
+    a: "Oui, EduSmart est une alternative moderne à Pronote ou Ecole directe. Il regroupe en une seule interface la vie scolaire, la gestion administrative, les emplois du temps et la communication.",
   },
   {
     q: "Quel logiciel pour gérer un établissement scolaire ?",
-    a: "Pour gérer efficacement un établissement scolaire, MyScol propose une plateforme complète avec des modules dédiés aux directeurs, enseignants, parents et élèves. Il s’adapte aux écoles, collèges, lycées, CFA et universités.",
+    a: "Pour gérer efficacement un établissement scolaire, EduSmart propose une plateforme complète avec des modules dédiés aux directeurs, enseignants, parents et élèves. Il s’adapte aux écoles, collèges, lycées, CFA et universités.",
   },
   {
     q: "Quel logiciel scolaire choisir pour un établissement privé ?",
-    a: "MyScol est particulièrement adapté aux établissements privés, qu’ils soient sous contrat ou hors contrat. La solution est personnalisable et modulable selon le type d’établissement.",
+    a: "EduSmart est particulièrement adapté aux établissements privés, qu’ils soient sous contrat ou hors contrat. La solution est personnalisable et modulable selon le type d’établissement.",
   },
 ];
 

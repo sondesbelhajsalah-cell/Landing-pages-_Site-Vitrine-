@@ -12,7 +12,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "MyScol | Logiciel de gestion scolaire",
+  title: "Edu Smart | Logiciel de gestion scolaire",
   description:
     "Plateforme tout-en-un pour piloter la gestion quotidienne de votre établissement scolaire : inscriptions, vie scolaire, finances et communication.",
 };

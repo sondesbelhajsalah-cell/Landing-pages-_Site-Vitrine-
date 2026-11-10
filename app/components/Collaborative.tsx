@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const actors = [
   { title: "Les enseignants", text: "partagent cours, devoirs et notes en quelques clics.", icon: "cap" },
   { title: "Les parents", text: "suivent la scolarité et échangent avec l’équipe pédagogique.", icon: "school" },
@@ -18,10 +20,10 @@ export default function Collaborative() {
   return (
     <section className="scroll-mt-24 px-4 py-8 sm:px-6">
       <div className="mx-auto max-w-4xl text-center">
-        <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-ink">• MyScol connecte tous les acteurs de l’éducation •</p>
+        <p className="text-xs font-extrabold uppercase tracking-[0.18em] text-ink">• EduSmart connecte tous les acteurs de l’éducation •</p>
         <h2 className="mt-4 text-3xl font-extrabold text-brand sm:text-4xl">Un logiciel de gestion scolaire collaboratif</h2>
         <p className="mt-6 text-lg leading-relaxed text-ink">
-          <strong>MyScol est une plateforme collaborative</strong> qui connecte l’ensemble des acteurs scolaires – dirigeants, enseignants, parents, élèves, secrétariat et gestionnaires financiers – pour simplifier la gestion et améliorer la communication en temps réel.
+          <strong>EduSmart est une plateforme collaborative</strong> qui connecte l’ensemble des acteurs scolaires – dirigeants, enseignants, parents, élèves, secrétariat et gestionnaires financiers – pour simplifier la gestion et améliorer la communication en temps réel.
         </p>
         <p className="mt-4 text-muted">
           Chaque utilisateur dispose d’un <strong className="text-ink">espace dédié</strong> pour échanger et accéder aux informations essentielles :
@@ -39,7 +41,7 @@ export default function Collaborative() {
           ))}
         </ul>
         <p className="mt-6 text-muted">
-          Grâce à <strong className="text-ink">MyScol, toutes les interactions sont centralisées</strong> pour une gestion <strong>fluide, transparente et efficace</strong>, au service de la réussite scolaire.
+          Grâce à <strong className="text-ink">EduSmart, toutes les interactions sont centralisées</strong> pour une gestion <strong>fluide, transparente et efficace</strong>, au service de la réussite scolaire.
         </p>
       </div>
       <Ecosystem />
@@ -65,30 +67,7 @@ function Ecosystem() {
 
   return (
     <div className="mx-auto mt-12 max-w-3xl">
-      <svg viewBox="0 0 800 700" role="img" aria-label="MyScol au centre, relié aux dirigeants, enseignants, parents, élèves, comptables et secrétariat" className="h-auto w-full">
-        {nodes.map((node) => {
-          const rad = (node.angle * Math.PI) / 180;
-          const x = cx + Math.cos(rad) * orbit;
-          const y = cy + Math.sin(rad) * orbit;
-          const lx = cx + Math.cos(rad) * (orbit + 78);
-          const ly = cy + Math.sin(rad) * (orbit + 78);
-          return (
-            <g key={node.label}>
-              <line x1={cx} y1={cy} x2={x} y2={y} stroke={node.color} strokeWidth="16" strokeLinecap="round" />
-              <circle cx={x} cy={y} r="54" fill="#fff" stroke={node.color} strokeWidth="12" />
-              <circle cx={x} cy={y} r="28" fill="none" stroke="#5d6d7e" strokeWidth="1.6" />
-              <text x={lx} y={ly} textAnchor="middle" dominantBaseline="middle" fill={node.color} fontSize="18" fontWeight="800">
-                {node.label}
-              </text>
-            </g>
-          );
-        })}
-        <circle cx={cx} cy={cy} r="92" fill="#fff" stroke="#e8eef3" strokeWidth="10" />
-        <text x={cx} y={cy + 6} textAnchor="middle" fontSize="28" fontWeight="800" fill="#243140">
-          MyScol
-        </text>
-        <path d="M372 312h56" stroke="#2eb0ea" strokeWidth="4" />
-      </svg>
+      <Image src="/collaboration-sidebar.png" alt="Ecoystème EduSmart" width={800} height={700} />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import InnerPage from "../../components/InnerPage";
 const pages: Record<string, { title: string; lead: string; points: string[] }> = {
   scolaire: {
     title: "Solution pour établissement scolaire",
-    lead: "De la maternelle au lycée, MyScol centralise inscriptions, vie scolaire, communication et finances.",
+    lead: "De la maternelle au lycée, EduSmart centralise inscriptions, vie scolaire, communication et finances.",
     points: ["Dossiers d’inscription et réinscription", "Notes, absences et cahier de textes", "Portails parents, élèves et enseignants"],
   },
   superieur: {

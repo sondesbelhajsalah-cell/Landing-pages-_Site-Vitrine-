@@ -1,23 +1,24 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const portals = [
   {
     title: "Direction & Administration",
-    text: "MyScol permet la gestion de votre école en tenant compte de ses critères spécifiques. Ce système de gestion de vie scolaire réduit le travail administratif des écoles et des enseignants.",
+    text: "EduSmart permet la gestion de votre école en tenant compte de ses critères spécifiques. Ce système de gestion de vie scolaire réduit le travail administratif des écoles et des enseignants.",
     href: "/portail/direction",
     art: "desk",
     flip: false,
   },
   {
     title: "Espace dédié Enseignants",
-    text: "MyScol permet de gérer les enseignants, leurs emplois du temps, leurs absences ainsi que les notes des élèves et leurs cahiers de texte.",
+    text: "EduSmart permet de gérer les enseignants, leurs emplois du temps, leurs absences ainsi que les notes des élèves et leurs cahiers de texte.",
     href: "/portail/enseignants",
     art: "diploma",
     flip: true,
   },
   {
     title: "Portail Parents & Élèves",
-    text: "Très appréciée des parents, MyScol permet de gérer les inscriptions des élèves, suivre leur vie scolaire, tout en garantissant la confidentialité de leurs données personnelles.",
+    text: "Très appréciée des parents, EduSmart permet de gérer les inscriptions des élèves, suivre leur vie scolaire, tout en garantissant la confidentialité de leurs données personnelles.",
     href: "/portail/parents",
     art: "home",
     flip: false,
@@ -66,31 +67,6 @@ function Art({ name }: { name: string }) {
   const label =
     name === "desk" ? "Illustration de la direction" : name === "diploma" ? "Illustration des enseignants" : "Illustration des familles";
   return (
-    <svg viewBox="0 0 560 300" role="img" aria-label={label} className="h-auto w-full">
-      <ellipse cx="280" cy="230" rx="180" ry="46" fill={name === "home" ? "#f8c3d4" : name === "diploma" ? "#d7c4fb" : "#f3b48a"} opacity="0.55" />
-      {name === "desk" && (
-        <>
-          <rect x="150" y="120" width="220" height="18" rx="4" fill="#f0a35a" />
-          <rect x="190" y="70" width="90" height="55" rx="6" fill="#67b7e8" />
-          <circle cx="250" cy="150" r="16" fill="#f2c2a0" />
-          <rect x="300" y="138" width="70" height="46" rx="8" fill="#243140" />
-        </>
-      )}
-      {name === "diploma" && (
-        <>
-          <rect x="150" y="70" width="250" height="150" rx="12" fill="#f6d48a" />
-          <path d="M250 40 310 70 250 100 190 70Z" fill="#3d4c5c" />
-          <circle cx="360" cy="170" r="28" fill="#ef6d86" />
-        </>
-      )}
-      {name === "home" && (
-        <>
-          <path d="M170 180 280 90l110 90v70H170v-70Z" fill="#f2b84b" />
-          <rect x="250" y="170" width="60" height="80" fill="#67b7e8" />
-          <circle cx="210" cy="200" r="16" fill="#f2c2a0" />
-          <circle cx="360" cy="190" r="16" fill="#e7b899" />
-        </>
-      )}
-    </svg>
+    <Image src={"/landing5-1.svg"} alt={label} className="h-auto w-full" width={360} height={200} />
   );
 }

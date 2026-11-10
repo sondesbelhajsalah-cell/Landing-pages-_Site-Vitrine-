@@ -13,7 +13,7 @@ export default function ChatWidget() {
           <div className="flex items-start justify-between gap-3">
             <div>
               <p className="font-extrabold">Une question ?</p>
-              <p className="text-sm text-muted">L’équipe MyScol vous répond.</p>
+              <p className="text-sm text-muted">L’équipe EduSmart vous répond.</p>
             </div>
             <button type="button" aria-label="Fermer le message" className="rounded-full p-1" onClick={() => setOpen(false)}>
               ×
